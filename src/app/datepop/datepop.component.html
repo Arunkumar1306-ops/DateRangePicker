@@ -1,0 +1,137 @@
+<form class="row row-cols-sm-auto">
+	<label class="dateinput" style="font-weight: 500;">DateFormat(dd-mm-yyy):</label>
+	<div class="col-12">
+		<div class="dp-hidden position-absolute">
+			<div class="input-group">
+				<input 
+					name="datepicker"
+					class="form-control"
+					ngbDatepicker
+					#datepicker="ngbDatepicker"
+					[autoClose]="'outside'"
+					(dateSelect)="onDateSelection($event)"
+					[displayMonths]="2"
+					[dayTemplate]="t"
+					outsideDays="hidden"
+					[startDate]="fromDate1!"
+					tabindex="-1"
+					
+				/>
+				<ng-template #t let-date let-focused="focused">
+					<span
+						class="custom-day"
+						[class.focused]="focused"
+						[class.range]="fromDate1 && toDate1 && isRange1(date)"
+						[class.faded]="fromDate1 && toDate1 && isHovered1(date) || isInside1(date)"
+						(mouseenter)="hoveredDate1 = date"
+						(mouseleave)="hoveredDate1 = null"
+					>
+						{{ date.day }}
+					</span>
+				</ng-template>
+			</div>
+		</div>
+		
+		<div class="input-group">
+			
+			<input 
+				#dpDateRange
+				class="form-control"
+				placeholder="dd-mm-yyyy - dd-mm-yyyy"
+				name="dpDateRange"
+				style="width: 240px;"
+				 [value]="fromDate1 && toDate1 ? formatDate(fromDate1) +' - '+ formatDate(toDate1) : ''" 
+				 [value]="fromDate1 ? (toDate1 ? formatDate(fromDate1) +' - '+ formatDate(toDate1) : formatDate(fromDate1)): ''" 
+				(input)="updateDateRange(dpDateRange.value)"
+				(click)="datepicker.toggle()"
+				
+				readonly
+			/>
+		</div>
+	</div>
+
+
+
+
+
+<div class="col-12">
+    <div class="dp-hidden position-absolute">
+		<div class="input-group">
+		  <input
+			name="datepickerOfBirth"
+			class="form-control"
+			ngbDatepicker
+			#datepickerOfBirth="ngbDatepicker"
+			[autoClose]="'outside'"
+			(dateSelect)="onDateOfBirthSelection($event)"
+			[displayMonths]="1" 
+			[dayTemplate]="t"
+			outsideDays="hidden"
+			tabindex="-1"
+		  />
+		  <!-- <ng-template #t let-date let-focused="focused">
+			<span
+			  class="custom-day2"
+			  [class.focused]="focused"
+			  [class.range2]="fromDate2 && toDate2 && isRange2(date)"
+			  [class.faded2]="fromDate2 && toDate2 && isHovered2(date) || isInside2(date)"
+			  (mouseenter)="hoveredDate2 = date"
+			  (mouseleave)="hoveredDate2 = null"
+			>
+			  {{ date.day }}
+			</span>
+		  </ng-template> -->
+		</div>
+	</div>
+	
+		<div class="input-group">
+		  <input
+			#dpDateOfBirth
+			class="form-control"
+			placeholder="dd-mm-yyyy"
+			name="dpDateOfBirth"
+			style="width: 240px;"
+			[value]="fromDate2 ? formatDate(fromDate2) : ''"
+			(input)="updateDateOfBirth(dpDateOfBirth.value)"
+			(click)="datepickerOfBirth.toggle()"
+			readonly
+		  />
+		</div>
+</div>
+		<!-- <div class="dp-hidden position-absolute">
+		  <div class="input-group">
+			<input
+			  name="datepickerOfBirth"
+			  class="form-control"
+			  ngbDatepicker
+			  #datepickerOfBirth="ngbDatepicker"
+			  [autoClose]="'outside'"
+			  (dateSelect)="onDateOfBirthSelection($event)"
+			  [displayMonths]="1" 
+			  [dayTemplate]="t"
+			  outsideDays="hidden"
+			  tabindex="-1"
+			/>
+			<ng-template #t let-date let-focused="focused">
+			  <span
+				class="custom-day"
+				[class.focused]="focused"
+				[class.range]="isRange(date)"
+				[class.faded]="isHovered(date) || isInside(date)"
+				(mouseenter)="hoveredDate = date"
+				(mouseleave)="hoveredDate = null"
+			  >
+				{{ date.day }}
+			  </span>
+			</ng-template>
+		  </div>
+		</div> -->
+		 
+</form>
+
+
+
+
+
+
+

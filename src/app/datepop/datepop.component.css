@@ -1,0 +1,213 @@
+.dp-hidden {
+    width: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+.custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.custom-day.range,
+.custom-day:hover {
+    /* background-color: #f9f9f9; */
+    background-color: #03456B;
+    color: rgb(255 255 255);
+    font-weight:600;
+    
+    border-radius: 20px;
+}
+.custom-day.faded {
+    background-color:#03456b14; 
+    color:#03456B;
+    
+}
+
+
+
+
+
+
+::ng-deep.custom-day2 {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+
+::ng-deep.custom-day2.range2,
+::ng-deep.custom-day2:hover {
+   
+    background-color: #03456B;
+    color: rgb(255 255 255);
+    font-weight:600;
+    
+    border-radius: 20px;
+}
+::ng-deep.custom-day2.faded2 {
+    background-color:#03456b14; 
+    color:#03456B;
+    
+}
+
+input.form-control[_ngcontent-ng-c321999863] {
+    width: 259px;
+    padding-left: 28px;
+    margin-left: 350px;
+    margin-top: 61px;
+    font-size: 17px;
+}
+ngb-datepicker.dropdown-menu {
+    padding: 9px;
+    padding-top: 14px;
+    /* background-image: linear-gradient(#43CBFF, #9708CC); */
+}
+
+::ng-deep.ngb-dp-navigation-select {
+    display: flex;
+    flex: 1 1 9rem;
+    border:none;
+    border-radius: none;
+    margin: 14px;
+}
+::ng-deep.ngb-dp-months {
+    display: flex;
+    /* background: linear-gradient(#4c335b, #9e4abd); */
+    /* background:#267DC6 */
+    /* background: linear-gradient(#03456B,#267DC6 ); */
+    /* background:#267DC6; */
+    background:#EDF8FD
+    /* background:#3081D024 */
+
+}
+
+/* ::ng-deep.ngb-dp-weekday {
+    color: rgb(255, 255, 255);
+   
+    font-weight: bold;
+    font-style: oblique;
+} */
+
+/* ::ng-deep.ngb-dp-month:first-child .ngb-dp-week {
+    padding-left: .25rem;
+    background: linear-gradient(#4c335b, #9708CC);
+    color: white;
+} */
+
+::ng-deep.ngb-dp-week {
+    color: #03456B;
+}
+::ng-deep.ngb-dp-week.ngb-dp-weekdays {
+    /* background: linear-gradient(#4c335b, #9708CC); */
+    /* background:#267DC6 */
+    background: linear-gradient(#03456B,#267DC6) ;
+
+}
+.ngb-dp-weekday {
+    color: white;
+}
+
+::ng-deep.ngb-dp-weekday{
+ color: #374187
+ /* color:rgb(45, 20, 104) */
+
+} 
+
+::ng-deep.ngb-dp-week-number {
+    color:#03456B;
+    line-height: 2rem;
+    text-align: center;
+    font-style: normal;
+}
+/* ::ng-deep.ngb-datepicker-navigation {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#4c335b, #9e4abd);
+} */
+
+::ng-deep.ngb-dp-header {
+    border-bottom: 0;
+    border-radius: .25rem .25rem 0 0;
+    padding-top: .25rem;
+    background: linear-gradient(#03456B,#267DC6) ;
+    /* background: linear-gradient(#4c335b, #9e4abd); */
+   
+    /* background-color:#267DC6; */
+}
+
+::ng-deep.ngb-dp-weekday.small {
+    color: rgb(255, 255, 255);
+    font-style:normal
+}
+
+
+/* ::ng-deep.form-select{
+    background-color: #9e4abd;
+    color:#f9f9f9
+} */
+/* ::ng-deep.span.ngb-dp-navigation-chevron {
+    color: white;
+} */
+
+/* ::ng-deep.button.btn.btn-link.ngb-dp-arrow-btn {
+    color: white;
+} */
+::ng-deep.btn-link {
+  color:#f9f9f9
+}
+/* ::ng-deep.select.form-select {
+    padding: 0px 9px;
+    margin: 2px 5px;
+} */
+::ng-deep.ngb-dp-navigation-select {
+    display: flex;
+    flex: 1 1 9rem;
+    padding: 0px 11px;
+    margin: 14px 23px;
+    gap: 7px;
+}
+
+/* ::ng-deep.ngb-datepicker{
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(350px, 102px, 0px);
+    margin-top: 35px;
+} */
+
+::ng-deep.dropdown-menu.show{
+    margin-top: 20px !important;
+}
+
+.dateinput{
+    padding-left:20px;
+    margin-top: 5px;
+    
+}
+form.row.row-cols-sm-auto.ng-untouched.ng-pristine.ng-valid {
+    margin-top: 115px;
+    margin-left: 222px;
+    
+}
+
+/* ::ng-deep.ngb-datepicker-navigation-select>.form-select { */
+   /* ::ng-deep.select.form-select {
+        width: 100% !important;
+        margin: -4px -6px !important;
+        align-content: space-between !important;
+    } */
+
+    ::ng-deep.ngb-dp-navigation-select {
+        display: flex;
+        flex: 1 1 9rem;
+        padding: 0px 12px;
+        margin: 0px -18px;
+        gap: 7px;
+    }
+
